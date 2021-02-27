@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/style.css">
+  <link href="dist/style.css" type="text/css" rel="stylesheet">
+
+  <title> Subeida's portfolio</title>
+
+</head>
+<body>
+
+  <header class="header">
+      <a href="index.html" class="header__logo"
+          alt="Home"/> Subeida Ahmed
+      </a>
+
+  </header>
+
+  <section><h3>Background</h3>
+  <p> 
+    I collaborated with social scientists, developers, and key stakeholders to complete a project investigating how intelligibility affects the use of a computer vision system. Microsoft designed the prototype to help Blind people locate others around them. It uses computer vision to identify people and sound to communicate whether someone is in front of them and if it recognizes the person the device will call their name. My dissertation at university was also based on this work, so I was involved in every stage of the study. From helping to write the research objectives, to the write up of the study for publication. I was fortunate to work with Abigail Sellen who is the head of HCI research in Microsoft Cambridge, Cecily Morrison who has expertise in accessibility, Harsha who is a social scientist and Martin the developer who created the system. Intelligibility is related to how people understand information, my background in Psychology allowed me to contextualise our findings with cognitive theories. It also helped me to ensure the experiment was reliable, valid, and I was able to apply inferential statistics because of this training. My HCI background was useful as it gave me an understanding of how to run studies that are accessible and how to conduct a thematic analysis over qualitative data. Overall, the project took 8 months to complete and was published in the <a href="https://www.microsoft.com/en-us/research/publication/investigating-the-intelligibility-of-a-computer-vision-system-for-blind-users/">IUI journal. </a> </p>
+  </section>
+
+  <section><h3>Project goals</h3>
+    <p> 
+        We were interested in investigating how changing the instructions users receive about the device would affect their use of the system. I provided participants with two types of instructions: what the sounds the system makes mean (Basic intelligibility) and instructions about the internal workings of the system (Enhanced intelligibility). Our research questions were as following:
+
+       <ul>
+           <li>How do basic or enhanced instructions influence the user experience?</li>
+           <li>How much, what type and what level of knowledge do blind users have of the system?</li>
+           <li>What is the effect of intelligibility on user interactions and use of the system?</li>
+        </ul> 
+    </section>
+
+    <section>
+        <h3>Research design</h3>
+        <p> 
+            For the project, we recruited 13 Blind users, and they were randomly allocated to either the Basic or Enhanced intelligibility group. We began the study with a pre-task session, which allowed the users to familiarize themselves with the system. All 13 participants received the Basic intelligibility instructions of the system, while we provided 7 participants with further Enhanced intelligibility instructions. 
+            Here are some examples of the Basic intelligibility instructions users were given were:</p>
+            <ul>
+                <li>If you hear the “person identifier knock” sound, the system has detected that a person is in front of you.</li>
+                <li>If you hear the “face identifier knock” sound, the system has not only detected that a person in front of you but has detected their face as well.</li>
+                <li>If the system can identify who it is, it will announce the person’s name.”</li>
+             </ul> 
+
+             <p>Whereas those in the Enhanced intelligibility group received further information about the internal workings of the system:</p>
+             <ul>
+                <li>“The system works within a certain range. It can detect a person up to 10 meters away. This is about the length of two cars or about 15 walking steps. It can identify people’s faces best when they are within 4m, about slightly less than a car length or about 6 walking steps.”</li>
+             </ul> 
+
+             <p>When the users received the instructions, they were each asked individually to take part in a semi-realistic networking task. We chose this task because this is a context a user of this technology would find the system useful and it also encouraged the participant to use the features of the system to find and identify the recruiter. We carefully designed the career networking event to mimic actual events yet make it repeatable so that every participant experiences the same conditions. This was done by recruiting confederates, a Microsoft recruiter the participants could network with and providing them with scripts and room plans.</p>
+
+             <img src="app/images/studyimage.png" alt="image of the task">
+             <p>Networking Task Setup During Main Session. Confederates talking to each other were situated in the middle of the room, with a technology demonstrator and a recruiter to the back of the room. The participant entered to the front-left, and needed to use the Hololens to locate the recruiter who is at the back-right.</p>
+
+             <p>Once the participant completed the study, we employed the NASA-TLX survey to measure perceived workload. As the original survey was not accessible for Blind users, we developed a 21-point-tactile, high-visibility scale supplemented with braille stickers. We then interviewed the study participants to gage their understanding of the system. We framed this by asking them to teach someone else who has a Blind how to use the system. We also included probes to follow-up on any answers that were not clear. For example: “If the headset calls out the name of a person, what can the user assume the system can see?”</p>
+    </section>
+
+    <section><h3>Analysis</h3>
+        <p> 
+            <ul>
+                <li>After the study, we used two measures of task success: first, how long it took the participants in each condition to find the recruiter in the networking task. Second, we analyzed how accurately the system was in identifying the recruiter to understand if the system’s performance changed between the two different study conditions. </li>
+                <li> The responses of the NASA-TLX were analyzed using a Mann-Whitney test.</li>
+                <li>Participants’ knowledge of the system was inspected by applying codes to the different knowledge types. We broke the different knowledge types into Declarative, Structural and Procedural knowledge types. A Mann-Whitney test was used to compare whether there was a significant difference between the two groups for each knowledge type. To ensure reliability of the coding, we conducted an inter-rater reliability test between how my supervisor and I coded the data.
+                </li>
+                <li>          
+                During the networking event, the participants’ behaviours were captured on a video camera. This allowed me to later analyze their movements (e.g., gaze, pace, bodily comportment). I used MAXQDA to apply codes directly on to the relevant video section. Each time a participant changed their movement, I coded the behaviour. I then created a visualization for the behavioural journey of each participant.</li>
+            </ul>
+           
+
+  
+        </section>
+
+            <section><h3>Key insights</h3>
+                <p> 
+                These findings have three implications for designing and building computer vision systems for blind users:
+            
+                   <ul>
+                       <li>Blind users can successfully employ systems with very little training. Almost all of our participants found the recruiter within a couple of minutes, and the workload of using the prototype was low.</li>
+                       <li>In addition to basic declarative knowledge, developers of these systems need to give users structural knowledge about how the system works, so they can work with the system and enact behaviours that suit it</li>
+                       <li>It appears it is possible for blind users to build better mental models when given more detailed information, translating this into more effective search strategies. It seems that the successful use of the system can be ‘nudged’ through more information.</li>
+                    </ul> 
+                </section>
+
+                <section><h3>Challenges</h3>
+                    <ul>
+                        <li>Recruitment proved to be highly challenging, due to the very specific requirements.</li>
+                        <li>The scale of this study proved to be highly challenging. Conducting 13 studies over 2 days, where I was involved in the pre and post-study interactions with the users, coordinating with the participants to ensure they arrived at the right place and on time was difficult to manage Despite this all participants completed the study.</li>
+                        <li>Working with a prototype tool had difficulties as the system would stop working intermittently, I was able to reduce the impact of this by communicating with the technology team at Microsoft.</li>
+                     </ul> 
+                    </section>
+
+
+                <section><h3>Impact</h3>
+                    <ul><li>
+                        This research helped the entire organization understand how users interacted with the system in a semi-realistic event before it was released to the public.
+                    </li> 
+                    <li>At a larger level, this was one of the first studies which studied how intelligibility impacts the use of AI systems designed for Blind users.</li>
+                    <li>
+                        The tactile NASA-TLX scale that I created from clay is being produced in 3D by a researcher at City to open-source this tool and hopefully encourage more studies with Blind participants.
+                    </li> 
+                    <li>On a personal note, this study really impacted how I think about accessibility and my reflection can be found in this blog post.</li></ul>
+                    </section>
+
+                    <a href="Macmillan" class="next">Next Case Study→</a>
+</body>
+</html>
