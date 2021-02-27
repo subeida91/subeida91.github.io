@@ -1,0 +1,87 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: $white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: "Merriweather", serif;
+    font-size: $font-med;
+    color: $darkBlue;
+    font-weight: 400;
+}
+
+a, a:visited, a:hover{
+    font-weight: 400;
+    color: $darkBlue;
+}
+
+
+/* button, .button {
+    position: relative;
+    display: inline-block;
+    padding: 0.875rem 2.1875rem;
+    background-color: $orange;
+    border: 0;
+    cursor: pointer;
+    font-weight: 400;  
+    font-size: $font-sm;  
+    transition: opacity 300ms ease-in-out;
+    overflow: hidden;
+    color: white;
+    transition: opacity 300ms ease-in-out;
+    &:hover {
+        opacity: 0.75;
+    }
+}
+*/
+
+
+//flexbox
+
+.flex{
+    display: flex;
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+
+    &-jc-c{
+        justify-content: center;
+    }
+
+    &-ac-c{
+        align-items: center;
+    }
+
+}
+
+h1{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+  }
+
+.next{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 35px;
+    padding-bottom: 20px;
+    font-size: 32px;
+
+}
