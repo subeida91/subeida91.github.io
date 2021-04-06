@@ -26,29 +26,6 @@ a{
 
 
 
-
-
-
-/* button, .button {
-    position: relative;
-    display: inline-block;
-    padding: 0.875rem 2.1875rem;
-    background-color: $orange;
-    border: 0;
-    cursor: pointer;
-    font-weight: 400;  
-    font-size: $font-sm;  
-    transition: opacity 300ms ease-in-out;
-    overflow: hidden;
-    color: white;
-    transition: opacity 300ms ease-in-out;
-    &:hover {
-        opacity: 0.75;
-    }
-}
-*/
-
-
 //flexbox
 
 .flex{
@@ -79,6 +56,10 @@ img {
     width: 50%;
 
   }
+
+a{
+    text-decoration: none;
+}
 
 .next{
     display: flex;
