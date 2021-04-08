@@ -18,11 +18,15 @@ body{
     font-size: $font-med;
     color: $darkBlue;
     font-weight: 400;
-        text-decoration: none;
 
 }
 
+a{
+    text-decoration: none;
+}
 
+a:hover{
+    text-decoration: underline;
 
 //flexbox
 
